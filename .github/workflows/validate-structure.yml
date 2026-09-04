@@ -1,0 +1,29 @@
+name: Validate Repository Structure
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate-structure:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check required repository files
+        run: |
+          test -f README.md || (echo "README.md is missing" && exit 1)
+          test -d docs || (echo "docs folder is missing" && exit 1)
+          echo "Repository structure is valid"
+
+      - name: Check required planning documents
+        run: |
+          echo "Files inside docs:"
+          ls -la docs
+          test "$(find docs -maxdepth 1 -type f -iname '*.pdf' | wc -l)" -ge 2 || (echo "ERD or API plan PDF is missing" && exit 1)
+          test "$(find docs -maxdepth 1 -type f -iname '*.sql' | wc -l)" -ge 1 || (echo "SQL script is missing" && exit 1)
+          echo "All required planning documents are present"
