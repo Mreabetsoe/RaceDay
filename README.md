@@ -21,6 +21,20 @@ The documentation includes:
 - RESTful API Endpoint Plan
 - SQL Server database creation and seed data script
 
+## Database
+
+RaceDay uses Microsoft SQL Server for data storage.
+
+The database contains the following entities:
+- User
+- Event
+- Category
+- EventCategory
+- Enrolment
+- Result
+
+The SQL script creates the database schema, defines primary and foreign key relationships, applies data constraints, and inserts sample data for testing.
+
 ## CI/CD
 
 The repository uses GitHub Actions to validate the required project structure and documentation. The workflow completed successfully.
