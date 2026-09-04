@@ -21,6 +21,18 @@ The documentation includes:
 - RESTful API Endpoint Plan
 - SQL Server database creation and seed data script
 
+## RESTful API
+
+The RaceDay API is designed around REST principles and uses routes beginning with `/api/`.
+
+The API supports:
+- User registration and login
+- User profile management
+- Event management
+- Category management
+- Event enrolment
+- Result recording and viewing
+
 ## Database
 
 RaceDay uses Microsoft SQL Server for data storage.
