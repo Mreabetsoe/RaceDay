@@ -66,3 +66,14 @@ RaceDay/
 The repository uses GitHub Actions to validate the required project structure and documentation. The workflow completed successfully.
 
 ![Successful GitHub Actions Build](docs/CI-Success.png)
+
+
+## Technology Stack
+
+RaceDay uses the following technologies:
+
+- Microsoft SQL Server for the relational database
+- SQL Server Management Studio (SSMS) for database development and testing
+- GitHub for version control and project hosting
+- GitHub Actions for repository validation and CI/CD
+- RESTful API design for system communication
