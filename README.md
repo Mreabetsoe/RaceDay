@@ -11,3 +11,9 @@ Race organiser can add new event or edit existing event, add/edit event catego
 
 ### Participant
 Users can sign up and log in, search for events, participate in event, and check their performance record. 
+
+## CI/CD
+
+The repository uses GitHub Actions to validate the required project structure and documentation. The workflow completed successfully.
+
+![Successful GitHub Actions Build](docs/CI-Success.png)
