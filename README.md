@@ -97,3 +97,15 @@ The RaceDay database uses constraints to maintain accurate and consistent data.
 - Unique constraints prevent duplicate email addresses and duplicate event enrolments.
 - Check constraints restrict roles, enrolment statuses, event distances, capacities and result positions.
 - Default values are used for creation dates and enrolment statuses.
+
+## Sample Data
+
+The database includes sample data for testing the RaceDay system.
+
+The seed data includes:
+- 2 Organisers
+- 2 Participants
+- 3 Events
+- Event categories
+- Sample enrolments
+- Sample participant results
