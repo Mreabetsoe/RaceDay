@@ -47,6 +47,16 @@ The database contains the following entities:
 
 The SQL script creates the database schema, defines primary and foreign key relationships, applies data constraints, and inserts sample data for testing.
 
+## Database Relationships
+
+The RaceDay database uses relational links between the main entities:
+
+- One User can organise many Events.
+- One User can have many Enrolments.
+- One Event can have many Enrolments.
+- Events and Categories have a many-to-many relationship resolved through EventCategory.
+- One Enrolment can have zero or one Result.
+
 ## Authentication and Security
 
 RaceDay uses authentication to protect non-public areas of the system. Users register with an email address and password and select either the Organiser or Participant role.
