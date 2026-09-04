@@ -12,6 +12,15 @@ Race organiser can add new event or edit existing event, add/edit event catego
 ### Participant
 Users can sign up and log in, search for events, participate in event, and check their performance record. 
 
+## Project Documentation
+
+The planning and database documentation for RaceDay is stored in the `/docs` folder.
+
+The documentation includes:
+- Entity Relationship Diagram (ERD)
+- RESTful API Endpoint Plan
+- SQL Server database creation and seed data script
+
 ## CI/CD
 
 The repository uses GitHub Actions to validate the required project structure and documentation. The workflow completed successfully.
