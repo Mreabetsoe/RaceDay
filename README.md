@@ -35,6 +35,12 @@ The database contains the following entities:
 
 The SQL script creates the database schema, defines primary and foreign key relationships, applies data constraints, and inserts sample data for testing.
 
+## Authentication and Security
+
+RaceDay uses authentication to protect non-public areas of the system. Users register with an email address and password and select either the Organiser or Participant role.
+
+Passwords are stored as hashed values rather than plain-text passwords. Role-based access control is used to restrict functionality according to the authenticated user's role.
+
 ## CI/CD
 
 The repository uses GitHub Actions to validate the required project structure and documentation. The workflow completed successfully.
