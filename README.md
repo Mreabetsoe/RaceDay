@@ -87,3 +87,13 @@ RaceDay uses the following technologies:
 - GitHub for version control and project hosting
 - GitHub Actions for repository validation and CI/CD
 - RESTful API design for system communication
+
+## Data Integrity
+
+The RaceDay database uses constraints to maintain accurate and consistent data.
+
+- Primary keys uniquely identify records.
+- Foreign keys maintain relationships between entities.
+- Unique constraints prevent duplicate email addresses and duplicate event enrolments.
+- Check constraints restrict roles, enrolment statuses, event distances, capacities and result positions.
+- Default values are used for creation dates and enrolment statuses.
