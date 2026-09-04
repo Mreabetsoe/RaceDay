@@ -109,3 +109,10 @@ The seed data includes:
 - Event categories
 - Sample enrolments
 - Sample participant results
+
+
+## Testing and Validation
+
+The RaceDay database script was executed successfully in SQL Server Management Studio.
+
+GitHub Actions is also used to validate the repository structure and confirm that the required planning documents are present in the project.
